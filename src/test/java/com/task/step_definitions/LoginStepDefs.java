@@ -42,7 +42,6 @@ public class LoginStepDefs {
 
     @Then("the title contains {string}")
     public void the_title_contains(String str) {
-//        BrowserUtils.waitFor(2);
         Assert.assertTrue(Driver.get().getTitle().contains(str));
     }
 
@@ -58,7 +57,6 @@ public class LoginStepDefs {
     @When("update personal and profesional data")
     public void update_personal_and_profesional_data() {
         homePage.clickEditIcon();
-//        BrowserUtils.waitFor(1);
         String name ="Maria";
         homePage.clearExistingText(name);
         homePage.yearUpdate();
