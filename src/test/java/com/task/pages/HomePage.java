@@ -34,7 +34,6 @@ public class HomePage extends BasePage{
 
 //css = "(//button[@class='ngx-dropdown-button'])[5]"
     public void clickAvatar() {
-//        BrowserUtils.waitFor(1);
         avatar.click();
     }
     public void clickDroptDownElement() {
