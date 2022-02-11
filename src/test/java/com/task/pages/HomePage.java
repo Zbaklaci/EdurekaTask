@@ -38,12 +38,10 @@ public class HomePage extends BasePage{
         avatar.click();
     }
     public void clickDroptDownElement() {
-//        BrowserUtils.waitFor(1);
         myProfile.click();
     }
 
     public void clickEditIcon() {
-//        BrowserUtils.waitFor(1);
         editIcon.click();
     }
     public void clearExistingText(String newText){
@@ -51,13 +49,11 @@ public class HomePage extends BasePage{
         enterName.sendKeys(newText);
     }
     public void yearUpdate(){
-//        BrowserUtils.waitFor(1);
         selectYear.click();
         Driver.get().findElement(By.xpath("(//ul[@class='available-items']/li)[1]")).click();
 
     }
     public void profUpdate(){
-//        BrowserUtils.waitFor(1);
         selectprof.click();
         Driver.get().findElement(By.xpath("(//ul[@class='available-items']/li)[5]")).click();
     }
