@@ -11,7 +11,9 @@ public class LoginPage extends BasePage {
  public LoginPage(){
      PageFactory.initElements(Driver.get(), this);
  }
-@FindBy(id = "si_popup_email")
+
+
+ @FindBy(id = "si_popup_email")
 public WebElement emailBox;
 
  @FindBy(id = "si_popup_passwd")

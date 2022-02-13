@@ -8,31 +8,28 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class BlogPage extends BasePage{
+public class BlogPage extends BasePage {
 
-    public BlogPage(){
-        PageFactory.initElements(Driver.get(), this); }
+    public BlogPage() {
+        PageFactory.initElements(Driver.get(), this);
+    }
 
-    @FindBy(xpath = "(//*[@target='_blank'])[2]")
-    public WebElement Blog;
 
     @FindBy(xpath = "//*[@class='category-box']")
     public WebElement blogsItem;
 
 
-    @FindBy(xpath = "(//*[@class='text-truncate'])[1]")
+    @FindBy(xpath = "//*[@class='title' and contains(.,'What are you ')]")
     public WebElement title;
 
-    public void clickBlog(){
-        Blog.click();
-    }
 
-    public void clickItem(){
+    public void clickItem() {
         blogsItem.click();
     }
 
-    public void clickToTitle(){
-     title.click();
-    }
-  }
 
+    public void getTitle() {
+      title.getText();
+    }
+
+}
