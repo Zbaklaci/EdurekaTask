@@ -54,4 +54,5 @@ public class UserInfoStepDefs {
         Assert.assertTrue(Driver.get().findElement(By.xpath("//*[@class='user-designation']")).isDisplayed());
 
     }
+
 }

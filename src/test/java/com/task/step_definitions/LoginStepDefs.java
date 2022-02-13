@@ -54,14 +54,7 @@ public class LoginStepDefs {
      homePage.clickDroptDownElement();
     }
 
-    @When("update personal and profesional data")
-    public void update_personal_and_profesional_data() {
-        homePage.clickEditIcon();
-        String name ="Maria";
-        homePage.clearExistingText(name);
-        homePage.yearUpdate();
-        homePage.profUpdate();
-    }
+
 
 
 }

@@ -20,8 +20,6 @@ public class HomePage extends BasePage{
     public WebElement myProfile;
 
 
-
-//css = "(//button[@class='ngx-dropdown-button'])[5]"
     public void clickAvatar() {
         avatar.click();
     }
