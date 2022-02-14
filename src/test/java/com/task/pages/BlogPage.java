@@ -16,7 +16,7 @@ public class BlogPage extends BasePage {
 
 
     @FindBy(xpath = "//*[@class='category-box']")
-    public WebElement blogsItem;
+    public WebElement blgItm;
 
 
     @FindBy(xpath = "//*[@class='title' and contains(.,'What are you ')]")
@@ -24,7 +24,7 @@ public class BlogPage extends BasePage {
 
 
     public void clickItem() {
-        blogsItem.click();
+        blgItm.click();
     }
 
 

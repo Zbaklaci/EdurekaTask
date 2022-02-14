@@ -10,8 +10,8 @@ public class MyProfilePage {
     public MyProfilePage() {
         PageFactory.initElements(Driver.get(), this);
     }
-      @FindBy(xpath = "(//*[@target='_blank'])[1]")
-      public WebElement blog;
+//      @FindBy(xpath = "//a[@href=\"https://www.edureka.co/blog\" and contains(.,'Blog']")
+//      public WebElement blog;
 
     @FindBy(className = "icon-pr-edit")
     public WebElement editIcon;
@@ -21,12 +21,12 @@ public class MyProfilePage {
         editIcon.click();
     }
 
-    public void clickBlogItem(){
-//        Driver.get().switchTo().frame(0);
-//        Driver.get().findElement(By.xpath("//*[.='Blog']")).click();
-//        Driver.get().switchTo().defaultContent();
-       blog.click();
-    }
+//    public void clickBlogItem(){
+////        Driver.get().switchTo().frame(0);
+////        Driver.get().findElement(By.xpath("//*[.='Blog']")).click();
+////        Driver.get().switchTo().defaultContent();
+//       blog.click();
+//    }
 
 
 }

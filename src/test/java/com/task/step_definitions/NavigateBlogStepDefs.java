@@ -19,7 +19,7 @@ public class NavigateBlogStepDefs {
 
     @When("the user navigates to blogs")
     public void the_user_navigates_to_blogs() {
-       blogPage.clickItem();
+      blogPage.clickItem();
 
     }
     @Then("the user should be able to go Blog page")

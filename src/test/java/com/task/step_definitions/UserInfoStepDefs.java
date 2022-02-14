@@ -52,8 +52,12 @@ public class UserInfoStepDefs {
 
     }
 
-    @When("the user clicks Blog item")
-    public void theUserClicksBlogItem() {
-        myProfilePage.clickBlogItem();
+    @When("the user clicks Blog")
+    public void theUserClicksBlog() {
+        Driver.get().switchTo().frame("_hjRemoteVarsFrame");
+        Driver.get().findElement(By.xpath("a[.='Blog' and contains(@target,'_')]")).click();
+       Driver.get().switchTo().defaultContent();
+
+
     }
 }
