@@ -14,10 +14,7 @@ public class UserInfoStepDefs {
     UserDetailsPage userDetailsPage= new UserDetailsPage();
     MyProfilePage myProfilePage =new MyProfilePage();
 
-    @When("the user clicks Blog item")
-    public void theUserClicksBlogItem() {
-     myProfilePage.clickBlogItem();
-    }
+
 
     @When("update personal and profesional data")
     public void update_personal_and_profesional_data() {
@@ -55,4 +52,8 @@ public class UserInfoStepDefs {
 
     }
 
+    @When("the user clicks Blog item")
+    public void theUserClicksBlogItem() {
+        myProfilePage.clickBlogItem();
+    }
 }

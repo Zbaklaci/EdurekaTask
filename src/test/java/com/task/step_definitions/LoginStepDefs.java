@@ -49,8 +49,9 @@ public class LoginStepDefs {
     public void the_user_clicks_avatar_icon() {
         homePage.clickAvatar();
     }
-    @When("the user clicks {string} in dropDown menu")
-    public void the_user_clicks_in_dropDown_menu(String dropDownEl) {
+
+    @When("the user clicks My Profile in dropDown menu")
+    public void the_user_clicks_in_My_Profile_dropDown_menu() {
      homePage.clickDroptDownElement();
     }
 
