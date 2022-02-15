@@ -10,23 +10,15 @@ public class MyProfilePage {
     public MyProfilePage() {
         PageFactory.initElements(Driver.get(), this);
     }
-//      @FindBy(xpath = "//a[@href=\"https://www.edureka.co/blog\" and contains(.,'Blog']")
-//      public WebElement blog;
+
 
     @FindBy(className = "icon-pr-edit")
     public WebElement editIcon;
-//    (//div[@class='ngx-dropdown-container'])[1]
+
 
     public void clickEditIcon() {
         editIcon.click();
     }
-
-//    public void clickBlogItem(){
-////        Driver.get().switchTo().frame(0);
-////        Driver.get().findElement(By.xpath("//*[.='Blog']")).click();
-////        Driver.get().switchTo().defaultContent();
-//       blog.click();
-//    }
 
 
 }

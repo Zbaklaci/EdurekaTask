@@ -19,6 +19,9 @@ public class HomePage extends BasePage{
     @FindBy(xpath = "//*[.='My Profile']")
     public WebElement myProfile;
 
+    @FindBy(xpath = "(//a[.='Log Out'])[1]")
+    public WebElement logOut;
+
 
     public void clickAvatar() {
         avatar.click();
@@ -26,6 +29,7 @@ public class HomePage extends BasePage{
     public void clickDroptDownElement() {
         myProfile.click();
     }
+    public void clickLogOut(){logOut.click();}
 
 
 

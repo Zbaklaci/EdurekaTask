@@ -7,12 +7,17 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class UserInfoStepDefs {
 
 
     UserDetailsPage userDetailsPage= new UserDetailsPage();
     MyProfilePage myProfilePage =new MyProfilePage();
+
 
 
 
@@ -54,9 +59,12 @@ public class UserInfoStepDefs {
 
     @When("the user clicks Blog")
     public void theUserClicksBlog() {
-        Driver.get().switchTo().frame("_hjRemoteVarsFrame");
-        Driver.get().findElement(By.xpath("a[.='Blog' and contains(@target,'_')]")).click();
-       Driver.get().switchTo().defaultContent();
+        WebDriver driver = new ChromeDriver();
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("scroll(0, 250);");
+        Driver.get().findElement(By.xpath("//a[.='Blog' and contains(@target,'_')]")).click();
+        driver.quit();
+
 
 
     }

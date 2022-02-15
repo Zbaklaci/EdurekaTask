@@ -12,5 +12,10 @@
       Scenario: Explore the blogs and navigate to the main page
         When the user clicks Blog
         Then the user should be able to go Blog page
-        And the title contains "What are you interested in learning?"
+        And the user explores to blogs
+        And the user should be able to back homepage
+        And the user clicks avatar icon
+        And the user clicks log out in dropDown menu
+        And log out portal
+
 

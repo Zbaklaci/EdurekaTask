@@ -6,8 +6,7 @@
       When the user enters the valid credentials
 
     Scenario: Login as a user to Edureka
-      Then the user should be able to go homepage
-      And the title contains "Edureka"
+      Then the user should be able to see the title contains "Edureka"
 ##Problem statement 1: consider that a candidate who has registered in the edureka portal
 #  # wants to update all the personal data and professional interests available in the portal.
 #    # Now the task is to write a selenium script to do the same and also explore the edureka portal.

@@ -14,22 +14,15 @@ public class BlogPage extends BasePage {
         PageFactory.initElements(Driver.get(), this);
     }
 
+   @FindBy(linkText = "Home")
+    public WebElement home;
 
-    @FindBy(xpath = "//*[@class='category-box']")
-    public WebElement blgItm;
-
-
-    @FindBy(xpath = "//*[@class='title' and contains(.,'What are you ')]")
-    public WebElement title;
-
-
-    public void clickItem() {
-        blgItm.click();
-    }
+    public void clickHome(){
+        home.click();
+}
 
 
-    public void getTitle() {
-      title.getText();
-    }
+
+
 
 }

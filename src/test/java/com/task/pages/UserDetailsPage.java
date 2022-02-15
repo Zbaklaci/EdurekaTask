@@ -26,8 +26,6 @@ public class UserDetailsPage {
     @FindBy(id = "designation")
     public WebElement designation;
 
-    @FindBy(xpath = "//*[.='4']")
-    public WebElement topicsButton;
 
     @FindBy(xpath = "//button[.='Save and Continue' and contains(@class,'btn-save')]")
     public WebElement saveAndContinue;
@@ -54,9 +52,7 @@ public class UserDetailsPage {
         designation.sendKeys(des);
 
     }
-    public void clickTopicButton(){
-        topicsButton.click();
-    }
+
     public void clickSaveButton(){
         saveAndContinue.click();
     }
