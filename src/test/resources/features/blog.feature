@@ -9,6 +9,7 @@
       And update personal and profesional data
       And the user clicks Save and Continue
 
+      @task
       Scenario: Explore the blogs and navigate to the main page
         When the user clicks Blog
         Then the user should be able to go Blog page

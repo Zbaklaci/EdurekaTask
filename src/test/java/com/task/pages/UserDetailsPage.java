@@ -6,9 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.logging.XMLFormatter;
-
-public class UserDetailsPage {
+public class UserDetailsPage extends BasePage {
     public UserDetailsPage(){
             PageFactory.initElements(Driver.get(), this);
     }
@@ -29,9 +27,6 @@ public class UserDetailsPage {
 
     @FindBy(xpath = "//button[.='Save and Continue' and contains(@class,'btn-save')]")
     public WebElement saveAndContinue;
-
-
-
 
     public void clearExistingAndSentNewText(String newText){
         enterName.clear();

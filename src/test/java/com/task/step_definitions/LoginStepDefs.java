@@ -36,11 +36,11 @@ public class LoginStepDefs {
         loginPage.login(gmail2, password2);
 
     }
-
-    @Then(" the user should be able to see the title contains {string}")
-    public void the_title_contains(String str) {
-        Assert.assertTrue(Driver.get().getTitle().contains(str));
-    }
+//
+//    @Then(" the user should be able to see the title contains {string}")
+//    public void theuser_should_be_able_to_see_the_title_contains(String str) {
+//        Assert.assertTrue(Driver.get().getTitle().contains(str));
+//    }
 
     @When("the user clicks avatar icon")
     public void the_user_clicks_avatar_icon() {
@@ -63,5 +63,11 @@ public class LoginStepDefs {
     @And("log out portal")
     public void logOutPortal() {
         Driver.get().getTitle();
+    }
+
+    @Then("the user should be able to see the title contains {string}")
+    public void theUserShouldBeAbleToSeeTheTitleContains(String str) {
+        Assert.assertTrue(Driver.get().getTitle().contains(str));
+
     }
 }

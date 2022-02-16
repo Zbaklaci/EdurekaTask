@@ -1,16 +1,11 @@
 package com.task.step_definitions;
 
 import com.task.pages.BlogPage;
-import com.task.utilities.BrowserUtils;
 import com.task.utilities.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 import java.util.Set;
