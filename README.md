@@ -6,10 +6,14 @@
      Now the task is to write a selenium script to do the same and also explore the edureka portal.
 
     Steps:
-  Login to Edureka
-  Navigate to 'My Profile'
-  Update professional and personal data
-  Explore the blogs and navigate to the main page
-  Portal logout
+  .Login to Edureka
+  
+ .Navigate to 'My Profile'
+ 
+  .Update professional and personal data
+  
+  .Explore the blogs and navigate to the main page
+  
+  .Portal logout
 
     url ="https://www.edureka.co/signin"
